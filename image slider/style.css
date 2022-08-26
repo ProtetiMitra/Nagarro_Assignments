@@ -1,0 +1,102 @@
+body {
+    background-color: #050505;
+    }
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem;
+    margin: auto;
+    width: 900px;
+  }
+  h1 {
+    margin: 1rem;
+    text-align: center;
+    color: rgb(228, 25, 25);
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  }
+  .container img {
+    width: 800px;
+    padding: 5px;
+    background: white;
+    box-shadow: 0 0 2rem 0rem rgb(55, 2, 104);
+    object-fit: cover;
+    z-index: 50;
+    transition: 500ms ease-in-out;
+  }
+  .in-active {
+    display: none;
+  }
+  .container i {
+    font-size: 3rem;
+  }
+  #next,
+  #prev {
+    color: white;
+    opacity: 0.1;
+    cursor: pointer;
+    user-select: none;
+    /* text-shadow:0 0 1rem whitesmoke; */
+  }
+  #next:hover,
+  #prev:hover {
+    opacity: 1;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(66, 1, 130);
+  }
+  
+  .bg {
+    /* background: url() no-repeat; */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+  }
+  .bg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  @keyframes sf-fly-by-1 {
+    from {
+      transform: translateZ(-600px);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateZ(0);
+      opacity: 0.5;
+    }
+  }
+  @keyframes sf-fly-by-2 {
+    from {
+      transform: translateZ(-1200px);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateZ(-600px);
+      opacity: 0.5;
+    }
+  }
+  @keyframes sf-fly-by-3 {
+    from {
+      transform: translateZ(-1800px);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateZ(-1200px);
+      opacity: 0.5;
+    }
+  }
+  
